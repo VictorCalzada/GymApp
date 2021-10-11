@@ -9,12 +9,12 @@ class Usuario(object):
     """
 
 
-    def __init__(self, str: nombre, float: peso, float: altura) -> void:
+    def __init__(self, nombre, peso, altura) -> void:
         self.nombre = nombre
         self.peso = peso
         self.altura = altura
 
-    def updatePeso(self, float: peso) -> void:
+    def updatePeso(self, peso) -> void:
         """
         Actualiza el peso del usiario
         Argumentos:
@@ -22,7 +22,7 @@ class Usuario(object):
         """
         self.peso = peso
 
-    def updateAltura(self, float: altura) -> void:
+    def updateAltura(self, altura) -> void:
         """
         Actualiza la altura del usiario
         Argumentos:
