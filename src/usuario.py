@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class Usuario(object):
     """
     Author: Victor Calzada
@@ -7,5 +9,23 @@ class Usuario(object):
     """
 
 
-    def __init__(self, str: nombre):
+    def __init__(self, str: nombre, float: peso, float: altura) -> void:
         self.nombre = nombre
+        self.peso = peso
+        self.altura = altura
+
+    def updatePeso(self, float: peso) -> void:
+        """
+        Actualiza el peso del usiario
+        Argumentos:
+        -float peso
+        """
+        self.peso = peso
+
+    def updateAltura(self, float: altura) -> void:
+        """
+        Actualiza la altura del usiario
+        Argumentos:
+        -float peso
+        """
+        self.altura = altura
