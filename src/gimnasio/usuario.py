@@ -1,4 +1,3 @@
-from __future__ import annotations
 
 class Usuario(object):
     """
@@ -9,12 +8,12 @@ class Usuario(object):
     """
 
 
-    def __init__(self, nombre, peso, altura) -> void:
+    def __init__(self, nombre, peso, altura):
         self.nombre = nombre
         self.peso = peso
         self.altura = altura
 
-    def updatePeso(self, peso) -> void:
+    def updatePeso(self, peso):
         """
         Actualiza el peso del usiario
         Argumentos:
@@ -22,10 +21,18 @@ class Usuario(object):
         """
         self.peso = peso
 
-    def updateAltura(self, altura) -> void:
+    def updateAltura(self, altura):
         """
         Actualiza la altura del usiario
         Argumentos:
         -float peso
         """
         self.altura = altura
+
+    def planDeEntreno(self, plan):
+        """
+        Establece un plan de entreno entre los posibles planes previstos
+        Argumentos:
+        -string plan
+        """
+        self.plan = plan
